@@ -9,17 +9,34 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ffmpeg/core": "^0.11.0",
+    "@ffmpeg/ffmpeg": "^0.11.6",
+    "@headlessui/react": "^1.7.14",
     "@types/node": "20.2.5",
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
-    "autoprefixer": "10.4.14",
+    "@upstash/ratelimit": "^0.4.2",
+    "@upstash/redis": "^1.20.6",
+    "clsx": "^1.2.1",
+    "encoding": "^0.1.13",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.4",
+    "eventsource-parser": "^1.0.0",
+    "formidable": "^2.1.1",
+    "framer-motion": "^10.12.5",
     "next": "13.4.4",
-    "postcss": "8.4.24",
+    "openai": "^3.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "tailwindcss": "3.3.2",
-    "typescript": "5.0.4"
+    "react-webcam": "^7.0.1",
+    "typescript": "5.0.4",
+    "uuidv4": "^6.2.13"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "@types/formidable": "^2.0.5",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2"
   }
 }

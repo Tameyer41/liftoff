@@ -1,34 +1,83 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<a href="https://demo.useliftoff.com">
+  <img alt="Liftoff – AI-Powered Mock Interviews" src="https://demo.useliftoff.com/opengraph-image">
+  <h1 align="center">Liftoff</h1>
+</a>
 
-## Getting Started
+<p align="center">
+  Mock Interview Simulator with AI-Powered Feedback
+</p>
 
-First, run the development server:
+<p align="center">
+  <a href="https://twitter.com/tmeyer_me">
+    <img src="https://img.shields.io/twitter/follow/tmeyer_me?style=flat&label=tmeyer_me&logo=twitter&color=0bf&logoColor=fff" alt="Tyler Meyer's follower count" />
+  </a>
+  <a href="https://github.com/tameyer41/liftoff">
+    <img src="https://img.shields.io/github/stars/tameyer41/liftoff?label=steven-tey%2Fliftoff" alt="Liftoff repo star count" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="#introduction"><strong>Introduction</strong></a> ·
+  <a href="#one-click-deploy"><strong>One-click Deploy</strong></a> ·
+  <a href="#tech-stack--features"><strong>Tech Stack + Features</strong></a> ·
+  <a href="#author"><strong>Author</strong></a>
+</p>
+<br/>
+
+## Introduction
+
+Liftoff is an interview preparation tool that provides feedback on your mock interviews.
+
+## One-click Deploy
+
+You can deploy this template to Vercel with the button below:
+
+Coming Soon!
+
+You can also clone & create this repo locally with the following command:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+npx create-next-app liftoff --example "https://github.com/tameyer41/liftoff"
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Tech Stack + Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+https://ik.imagekit.io/9km72asqu/CleanShot_2023-05-31_at_12.43.54_svKkqF7dA.png?updatedAt=1685551454273
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Frameworks
 
-## Learn More
+- [Next.js](https://nextjs.org/) – React framework for building performant apps with the best developer experience
 
-To learn more about Next.js, take a look at the following resources:
+### Platforms
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Vercel](https://vercel.com/) – Easily preview & deploy changes with git
+- [Upstash](https://upstash.com/) - Serverless Data Platform (here using serverless Redis for rate limiting)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### UI
 
-## Deploy on Vercel
+- [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework for rapid UI development
+- [Framer Motion](https://framer.com/motion) – Motion library for React to animate components with ease
+- [`ImageResponse`](https://beta.nextjs.org/docs/api-reference/image-response) – Generate dynamic Open Graph images at the edge
+- [HeadlessUI](https://headlessui.com/) - Completely unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Code Quality
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [TypeScript](https://www.typescriptlang.org/) – Static type checker for end-to-end typesafety
+- [Prettier](https://prettier.io/) – Opinionated code formatter for consistent code style
+- [ESLint](https://eslint.org/) – Pluggable linter for Next.js and TypeScript
+
+### Miscellaneous
+
+- [FFMPEG.WASM](https://ffmpegwasm.netlify.app/) – Transcode video/audio files
+- [React Webcam](https://github.com/mozmorris/react-webcam) - Webcam component for React
+- [Stripe Gradient Animation](https://whatamesh.vercel.app/) - [@jordienr](https://twitter.com/jordienr) released a Mesh Gradient that uses WebGL and animates a beautiful gradient
+
+## How it all works
+
+Liftoff uses FFmpeg to transcode the raw video into MP3. Chrome, Safari, and Firefox all record with different codecs, and FFmpeg is great for standardizing them.
+
+We then send the audio directly to be transcribed by OpenAI's Whisper endpoint, and then stream feedback from the edge using OpenAI's gpt-3.5-turbo.
+
+## Author
+
+- Tyler Meyer ([@tmeyer_me](https://twitter.com/tmeyer_me))
