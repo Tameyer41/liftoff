@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+  title: "Liftoff - AI-Powered Mock Interviews",
   openGraph: {
     title: "Liftoff - AI-Powered Mock Interviews",
     description:

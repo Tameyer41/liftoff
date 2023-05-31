@@ -26,7 +26,7 @@
 
 ## Introduction
 
-Liftoff is an interview preparation tool that provides feedback on your mock interviews.
+Liftoff is an interview preparation tool that provides AI feedback on your mock interviews.
 
 ## One-click Deploy
 
@@ -42,7 +42,9 @@ npx create-next-app liftoff --example "https://github.com/Tameyer41/liftoff"
 
 ## Tech Stack + Features
 
-![Liftoff Landing Page](https://ik.imagekit.io/9km72asqu/CleanShot_2023-05-31_at_12.43.54_svKkqF7dA.png?updatedAt=1685551454273)
+![Landing Page](https://ik.imagekit.io/9km72asqu/CleanShot_2023-05-31_at_12.43.54_svKkqF7dA.png?updatedAt=1685551454273)
+
+![Interview Selection](https://ik.imagekit.io/9km72asqu/CleanShot_2023-05-31_at_13.35.55_xohCRNMlJ.png?updatedAt=1685554576155)
 
 ### Frameworks
 
