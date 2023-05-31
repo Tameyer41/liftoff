@@ -1,6 +1,6 @@
 <a href="https://demo.useliftoff.com">
   <img alt="Liftoff – AI-Powered Mock Interviews" src="https://demo.useliftoff.com/opengraph-image">
-  <h1 align="center">Liftoff</h1>
+  <h1 align="center">Liftoff Interviews</h1>
 </a>
 
 <p align="center">
@@ -9,10 +9,10 @@
 
 <p align="center">
   <a href="https://twitter.com/tmeyer_me">
-    <img src="https://img.shields.io/twitter/follow/tmeyer_me?style=flat&label=tmeyer_me&logo=twitter&color=0bf&logoColor=fff" alt="Tyler Meyer's follower count" />
+    <img src="https://img.shields.io/twitter/follow/tmeyer_me?style=flat&label=Follow&logo=twitter&color=0bf&logoColor=fff" alt="Tyler Meyer's follower count" />
   </a>
-  <a href="https://github.com/tameyer41/liftoff">
-    <img src="https://img.shields.io/github/stars/tameyer41/liftoff?label=steven-tey%2Fliftoff" alt="Liftoff repo star count" />
+  <a href="https://github.com/Tameyer41/liftoff">
+    <img src="https://img.shields.io/github/stars/Tameyer41/liftoff?label=Tameyer41%2Fliftoff" alt="Liftoff repo star count" />
   </a>
 </p>
 
@@ -32,17 +32,17 @@ Liftoff is an interview preparation tool that provides feedback on your mock int
 
 You can deploy this template to Vercel with the button below:
 
-Coming Soon!
+Sooooon!
 
 You can also clone & create this repo locally with the following command:
 
 ```bash
-npx create-next-app liftoff --example "https://github.com/tameyer41/liftoff"
+npx create-next-app liftoff --example "https://github.com/Tameyer41/liftoff"
 ```
 
 ## Tech Stack + Features
 
-https://ik.imagekit.io/9km72asqu/CleanShot_2023-05-31_at_12.43.54_svKkqF7dA.png?updatedAt=1685551454273
+![Liftoff Landing Page](https://ik.imagekit.io/9km72asqu/CleanShot_2023-05-31_at_12.43.54_svKkqF7dA.png?updatedAt=1685551454273)
 
 ### Frameworks
 
