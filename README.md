@@ -32,7 +32,7 @@ Liftoff is an interview preparation tool that provides AI feedback on your mock 
 
 You can deploy this template to Vercel with the button below:
 
-Sooooon!
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FTameyer41%2Fliftoff&env=OPENAI_API_KEY,UPSTASH_REDIS_REST_URL,UPSTASH_REDIS_REST_TOKEN&envDescription=API%20Keys%20needed%20for%20the%20application%3B%20OpenAI%20for%20feedback%20and%20transcription%2C%20and%20Upstash%20for%20rate%20limiting&envLink=https%3A%2F%2Fplatform.openai.com%2Faccount%2Fapi-keys&project-name=liftoff&repository-name=liftoff&demo-title=Liftoff%20-%20AI-Powered%20Mock%20Interviews&demo-description=An%20AI-powered%20mock%20interview%20platform%20that%20helps%20you%20practice%20for%20your%20next%20job%20interview.&demo-url=https%3A%2F%2Fdemo.useliftoff.com%2F&demo-image=https%3A%2F%2Fik.imagekit.io%2F9km72asqu%2FCleanShot_2023-05-31_at_12.43.54_svKkqF7dA.png%3FupdatedAt%3D1685551454273)
 
 You can also clone & create this repo locally with the following command:
 

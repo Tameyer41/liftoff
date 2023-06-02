@@ -744,17 +744,13 @@ export default function DemoPage() {
                     }}
                     className="relative md:aspect-[16/9] w-full max-w-[1080px] overflow-hidden bg-[#1D2B3A] rounded-lg ring-1 ring-gray-900/5 shadow-md flex flex-col items-center justify-center"
                   >
-                    <video
-                      className="w-full h-full rounded-lg"
-                      controls
-                      crossOrigin="anonymous"
-                      autoPlay
-                    >
-                      <source
-                        src="https://liftoff-public.s3.amazonaws.com/Liftoff+-+Speaking+Demo.mp4"
-                        type="video/mp4"
-                      />
-                    </video>
+                    <p className="text-white font-medium text-lg text-center max-w-3xl">
+                      Camera permission is denied. We don{`'`}t store your
+                      attempts anywhere, but we understand not wanting to give
+                      us access to your camera. Try again by opening this page
+                      in an incognito window {`(`}or enable permissions in your
+                      browser settings{`)`}.
+                    </p>
                   </motion.div>
                   <div className="flex flex-row space-x-4 mt-8 justify-end">
                     <button
@@ -766,37 +762,39 @@ export default function DemoPage() {
                     >
                       Restart demo
                     </button>
-                    <button
-                      onClick={() => console.log("Requested waitlist")}
-                      className="group rounded-full px-4 py-2 text-[13px] font-semibold transition-all flex items-center justify-center bg-[#1E2B3A] text-white hover:[linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #0D2247] no-underline flex gap-x-2  active:scale-95 scale-100 duration-75"
+                    <Link
+                      href="https://github.com/Tameyer41/liftoff"
+                      target="_blank"
+                      className="group rounded-full pl-[8px] min-w-[180px] pr-4 py-2 text-[13px] font-semibold transition-all flex items-center justify-center bg-[#1E2B3A] text-white hover:[linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #0D2247] no-underline flex gap-x-2  active:scale-95 scale-100 duration-75"
                       style={{
                         boxShadow:
                           "0px 1px 4px rgba(13, 34, 71, 0.17), inset 0px 0px 0px 1px #061530, inset 0px 0px 0px 2px rgba(255, 255, 255, 0.1)",
                       }}
                     >
-                      <span> Request an invite </span>
-                      <svg
-                        className="w-5 h-5"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M13.75 6.75L19.25 12L13.75 17.25"
-                          stroke="#FFF"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M19 12H4.75"
-                          stroke="#FFF"
-                          strokeWidth="1.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                    </button>
+                      <span className="w-5 h-5 rounded-full bg-[#407BBF] flex items-center justify-center">
+                        <svg
+                          className="w-[16px] h-[16px] text-white"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            stroke="currentColor"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M4.75 7.75C4.75 6.64543 5.64543 5.75 6.75 5.75H17.25C18.3546 5.75 19.25 6.64543 19.25 7.75V16.25C19.25 17.3546 18.3546 18.25 17.25 18.25H6.75C5.64543 18.25 4.75 17.3546 4.75 16.25V7.75Z"
+                          ></path>
+                          <path
+                            stroke="currentColor"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M5.5 6.5L12 12.25L18.5 6.5"
+                          ></path>
+                        </svg>
+                      </span>
+                      Star on Github
+                    </Link>
                   </div>
                 </div>
               )}
