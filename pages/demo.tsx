@@ -23,8 +23,8 @@ const questions = [
 
 const interviewers = [
   {
-    id: "John",
-    name: "John",
+    id: "Ely",
+    name: "Ely",
     description: "Software Engineering",
     level: "L3",
   },
@@ -195,7 +195,7 @@ export default function DemoPage() {
       const question =
         selected.name === "Behavioral"
           ? `Tell me about yourself. Why don${`’`}t you walk me through your resume?`
-          : selectedInterviewer.name === "John"
+          : selectedInterviewer.name === "Ely"
           ? "What is a Hash Table, and what is the average case and worst case time for each of its operations?"
           : selectedInterviewer.name === "Richard"
           ? "Uber is looking to expand its product line. Talk me through how you would approach this problem."
