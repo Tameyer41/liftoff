@@ -85,3 +85,4 @@ We then send the audio directly to be transcribed by OpenAI's Whisper endpoint, 
 - Joy Rubeth Padernal
 - Jeremiah Daniel Regalario ([@jed_deyn](https://twitter.com/jed_deyn))
 - Insert here
+- Insert here
