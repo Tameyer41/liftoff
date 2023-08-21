@@ -440,7 +440,7 @@ export default function DemoPage() {
                   <p className="prose prose-sm max-w-none">
                     {transcript.length > 0
                       ? transcript
-                      : "Don't think you said anything. Want to try again?"}
+                      : "Apologies, your words are inaudible. Do you want to try again?"}
                   </p>
                 </div>
                 <div className="mt-8">
