@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
   title: "Liftoff - AI-Powered Mock Interviews",
@@ -22,8 +22,12 @@ export const metadata: Metadata = {
     creator: "@tmeyer_me",
   },
   metadataBase: new URL("https://demo.useliftoff.com"),
-  themeColor: "#FFF",
 };
+
+export const viewport: Viewport = {
+  themeColor: '#FFF',
+};
+
 
 export default async function RootLayout({
   children,
