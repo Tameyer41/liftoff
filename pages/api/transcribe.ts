@@ -30,11 +30,11 @@ export default async function handler(req: any, res: any) {
     }
   );
 
-  const videoFile = fData.files.file;
-  const videoFilePath = videoFile?.filepath;
-  console.log(videoFilePath);
-
   try {
+    const videoFile = fData.files.file;
+    const videoFilePath = videoFile[0]?.filepath;
+    console.log(videoFilePath);
+
     const resp = await openai.createTranscription(
       fs.createReadStream(videoFilePath),
       "whisper-1"
